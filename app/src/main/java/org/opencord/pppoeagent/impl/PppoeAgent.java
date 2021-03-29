@@ -183,7 +183,7 @@ public class PppoeAgent
 
     Set<ConnectPoint> pppoeConnectPoints;
     protected AtomicReference<ConnectPoint> pppoeServerConnectPoint = new AtomicReference<>();
-    protected boolean useOltUplink = false;
+    protected boolean useOltUplink = true;
 
     static ConsistentMap<MacAddress, PppoeSessionInfo> sessionsMap;
 
