@@ -359,6 +359,11 @@ public class PppoeAgentTestBase {
         }
 
         @Override
+        public void clearLocalData() {
+
+        }
+
+        @Override
         public void invalidateAll() {}
         @Override
         public void invalidateId(String id) {}
