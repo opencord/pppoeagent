@@ -5,7 +5,8 @@ As described in TR-101 Issue 2 - 3.9.2, the PPPoE Intermediate Agent supports th
 
 ### Description
 The PPPoE Agent intercepts all upstream PPPoED packets, i.e. the PADI, PADR and upstream PADT packets, but does not modify the source or destination MAC address of these PPPoE discovery packets.
-Upon receipt of a PADI or PADR packet sent by the PPPoE client, the Intermediate Agent adds a PPPoE TAG to the packet to be sent upstream. The TAG contains the identification of the access loop (circuit-id) on which the PADI or PADR packet was received.
+Upon receipt of a PADI or PADR packet sent by the PPPoE client, the Intermediate Agent adds a Vendor Specific PPPoE Tag to the packet to be sent upstream. The TAG contains the identification of the access loop (circuit-id) on which the PADI or PADR packet was received and the value of "remoteId" field if defined on subscriber's Sadis.
+
 The circuit-id is generated following the format: "[OLT-SN] [SLOT]/[PON-PORT]:[ONU-SN]", i.e: 
 
 *EC1724000150 0/2:ALPHe3132051*
