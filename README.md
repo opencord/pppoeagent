@@ -13,7 +13,7 @@ The circuit-id is generated following the format: "[OLT-SN] [SLOT]/[PON-PORT]:[O
 If a PADI or PADR packet exceeds the Ethernet MTU after adding the access loop identification TAG, the Intermediate Agent must drop the packet, and issue the corresponding PADO or PADS response with a Generic-Error TAG to the sender.
 
 PPPoE agent keeps track of the client's connect point saving it along other information (i.e: MAC address, session-id, last received packet type and etc) in a storage available through the CLI "pppoe-users". With that at hand, the agent also intercepts the downstream PPPoED packets, such as PADO, PADS and PADT from server. These responses are processed and delivered to the connect point associated with the destination MAC address. If the destination MAC address is not known for PPPoE Agent, the packet is dropped.
-A
+
 ## Component Configuration
 ```sh
  "org.opencord.pppoeagent.impl.PppoeAgent": {
@@ -53,7 +53,7 @@ git clone "https://gerrit.opencord.org/pppoeagent" && cd pppoeagent
 ```sh
 mvn clean install
 ```
-After these steps, the *.oar* file should be available at "pppoeagent/app/target/pppoeagent-app-1.0.0-SNAPSHOT.oar".
+After these steps, the *.oar* file should be available at "pppoeagent/app/target/pppoeagent-app-1.0.0.oar".
 
 Now you can upload and install the *.oar* in the Onos running instance using the [onos-app shell utility](https://gerrit.onosproject.org/plugins/gitiles/onos/+/refs/heads/onos-2.3/tools/package/runtime/bin/onos-app)
 

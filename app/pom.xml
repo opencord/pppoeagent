@@ -31,7 +31,7 @@
 
     <properties>
         <web.context>/onos/pppoeagent</web.context>
-        <api.version>1.0.0-SNAPSHOT</api.version>
+        <api.version>1.0.0</api.version>
         <api.title>PPPoE Agent REST API</api.title>
         <api.description>REST API to query PPPoE agent sessions information.</api.description>
         <api.package>org.opencord.pppoeagent.rest</api.package>
