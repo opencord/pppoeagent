@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2021-present Open Networking Foundation
+  ~ Copyright 2021-2023 Open Networking Foundation (ONF) and the ONF Contributors
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@
     <description>PPPoE Intermediate Agent</description>
 
     <properties>
-        <sadis.api.version>5.6.0</sadis.api.version>
+        <sadis.api.version>5.11.1</sadis.api.version>
     </properties>
 
     <modules>
@@ -83,7 +83,7 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>4.0.4</version>
+                <version>4.7.3.4</version>
                 <configuration>
                     <effort>Max</effort>
                     <threshold>Low</threshold>
@@ -94,7 +94,7 @@
                         <plugin>
                             <groupId>com.h3xstream.findsecbugs</groupId>
                             <artifactId>findsecbugs-plugin</artifactId>
-                            <version>1.10.1</version>
+                            <version>1.12.0</version>
                         </plugin>
                     </plugins>
                 </configuration>
