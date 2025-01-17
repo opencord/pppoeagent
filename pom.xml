@@ -25,7 +25,7 @@
 
     <groupId>org.opencord</groupId>
     <artifactId>pppoeagent</artifactId>
-    <version>1.3.1-SNAPSHOT</version>
+    <version>1.3.1</version>
     <packaging>pom</packaging>
 
     <description>PPPoE Intermediate Agent</description>
