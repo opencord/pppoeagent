@@ -31,7 +31,7 @@
     <description>PPPoE Intermediate Agent</description>
 
     <properties>
-        <sadis.api.version>5.12.2</sadis.api.version>
+        <sadis.api.version>5.12.3</sadis.api.version>
     </properties>
 
     <modules>
